@@ -22,11 +22,10 @@ function encuentraPares(array){
   // en el arreglo de enteros pasado como parámetro
   // Tu código:
   var pares=[];
-  var cont=0;
+  
   for (numero of array) {
     if (numero % 2 === 0){
-      pares[cont] = numero;
-      cont++;
+     pares.push(numero)
     }
   }
   return pares;
@@ -44,10 +43,13 @@ function elevaAlCuadrado(array){
     cont++;
   }
   return array_cuadrado;*/
-  array.forEach(function (elemento, indice) {
-    array[indice]=elemento**2;
-  });
-  return array;
+  var cuadrado=array.map(
+    function(elemento)
+    {
+      return elemento**2;
+    }
+  )
+  return cuadrado;
 }
 
 function sumaArray(array){

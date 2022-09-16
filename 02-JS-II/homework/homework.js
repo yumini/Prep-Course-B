@@ -141,14 +141,15 @@ function devolverString(str) {
     //Si el número es 0, devuelve false
     // Tu código:
     var respuesta = 'Es negativo';
-    if(numero > 0)
-    {
-      respuesta = 'Es positivo';
-    }
-
     if(numero === 0)
     {
       respuesta = false;
+    } 
+    else{
+      if(numero > 0)
+      {
+        respuesta = 'Es positivo';
+      }
     }
     return respuesta;
   }
