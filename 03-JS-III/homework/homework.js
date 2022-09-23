@@ -25,7 +25,7 @@ function encuentraPares(array){
   
   for (numero of array) {
     if (numero % 2 === 0){
-     pares.push(numero)
+     pares.push(numero);
     }
   }
   return pares;
